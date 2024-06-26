@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Plate Recognition</title>
+</head>
+<body>
+    <h1>Upload Array</h1>
+    <form method="post" action="{% url 'predict' %}">
+        {% csrf_token %}
+        <textarea name="array" rows="10" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
